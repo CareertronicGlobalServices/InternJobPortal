@@ -1,6 +1,6 @@
 "use client";
-import React from 'react';
-import FilterPanel from '@/component/jobportaldashroard/FilterPanel';
+import React from "react";
+import FilterPanel from "@/component/jobportaldashboard/FilterPanel";
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
           <div className="md:col-span-3">
             <FilterPanel />
           </div>
-          
+
           {/* Main Content - 9 columns on desktop */}
           <div className="md:col-span-9">
             <div className="bg-white rounded-lg shadow p-6">
@@ -36,14 +36,19 @@ const page = () => {
                   </select>
                 </div>
               </div>
-              
+
               {/* Job Cards */}
               <div className="space-y-4">
                 {[1, 2, 3, 4, 5].map((item) => (
-                  <div key={item} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <div
+                    key={item}
+                    className="border rounded-lg p-4 hover:shadow-md transition-shadow"
+                  >
                     <div className="flex flex-col md:flex-row justify-between items-start mb-2">
                       <div>
-                        <h2 className="text-lg font-semibold">Senior Software Engineer</h2>
+                        <h2 className="text-lg font-semibold">
+                          Senior Software Engineer
+                        </h2>
                         <p className="text-gray-600">TechCorp Inc.</p>
                       </div>
                       <button className="mt-2 md:mt-0 px-3 py-1 text-sm border border-red-600 text-red-600 rounded hover:bg-red-50">
@@ -58,14 +63,24 @@ const page = () => {
                   </div>
                 ))}
               </div>
-              
+
               {/* Pagination */}
               <div className="mt-6 flex justify-center gap-2">
-                <button className="px-3 py-1 border rounded hover:bg-gray-50">Previous</button>
-                <button className="px-3 py-1 bg-red-600 text-white rounded">1</button>
-                <button className="px-3 py-1 border rounded hover:bg-gray-50">2</button>
-                <button className="px-3 py-1 border rounded hover:bg-gray-50">3</button>
-                <button className="px-3 py-1 border rounded hover:bg-gray-50">Next</button>
+                <button className="px-3 py-1 border rounded hover:bg-gray-50">
+                  Previous
+                </button>
+                <button className="px-3 py-1 bg-red-600 text-white rounded">
+                  1
+                </button>
+                <button className="px-3 py-1 border rounded hover:bg-gray-50">
+                  2
+                </button>
+                <button className="px-3 py-1 border rounded hover:bg-gray-50">
+                  3
+                </button>
+                <button className="px-3 py-1 border rounded hover:bg-gray-50">
+                  Next
+                </button>
               </div>
             </div>
           </div>
@@ -73,6 +88,6 @@ const page = () => {
       </div>
     </div>
   );
-}
+};
 
 export default page;

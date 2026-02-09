@@ -2,7 +2,7 @@
 import React from "react";
 import { Search, MapPin, Briefcase, Clock, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Carousel from "@/component/JobPortal/Crousel";
+import Carousel from "@/component/Jobportal/Crousel";
 
 export default function JobPlatform() {
   const companies = [
